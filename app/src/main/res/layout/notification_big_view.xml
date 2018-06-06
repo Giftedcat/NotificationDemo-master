@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="112dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/champion" />
+
+    <ImageButton
+        android:id="@+id/iv_close"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:src="@drawable/note_btn_close_white" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/iv_logo"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextAppearance.AppCompat.Notification.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Beautiful In White" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            style="@style/TextAppearance.AppCompat.Notification.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Shane Filan - Beautiful In White" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="64dp"
+        android:layout_toRightOf="@id/iv_logo"
+        android:background="#CCC" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/iv_logo"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/iv_love"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/note_btn_love_white" />
+
+        <ImageButton
+            android:id="@+id/iv_back"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/note_btn_pre_white" />
+
+        <ImageButton
+            android:id="@+id/iv_pause"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/note_btn_pause_white" />
+
+        <ImageButton
+            android:id="@+id/iv_next"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/note_btn_next_white" />
+
+        <ImageButton
+            android:id="@+id/iv_lyc"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/note_btn_lyc_white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
